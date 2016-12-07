@@ -84,6 +84,13 @@ a {
     padding-right: 10px;
 }
 
+#footer {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    padding: 7px;
+}
+
 
 /* ---- particles.js container ---- */
 
