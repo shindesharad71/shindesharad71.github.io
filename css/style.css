@@ -95,6 +95,10 @@ p {
     margin-top: 110px;
 }
 
+#skills_div {
+    color: #fff;
+}
+
 .card {
     z-index: 9999;
     -webkit-box-shadow: 1px 1px 1px 1px #ccc;
