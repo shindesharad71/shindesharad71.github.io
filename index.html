@@ -7,8 +7,9 @@
     <!-- Other than that, I try to keep it dead simple. The fewer moving parts, the better.-->
     <!-- Curious about anything? Feel free to shoot me a note at shindesharad71@gmail.com -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="manifest" href="/imgs/manifest.json">
     <title>Sharad Shinde | Web Developer</title>
     <meta name="description" content="Portfolio of Web Developer & Designer - Sharad Shinde.">
     <meta name="author" content="Sharad Shinde">
@@ -30,9 +31,9 @@
     <link rel="manifest" href="imgs/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="imgs/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#2098D1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -251,7 +252,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Herr+Von+Muellerhoff|Roboto|Roboto+Condensed" rel="stylesheet">
     <!-- All JS resources -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
     <script type="text/javascript">
     $(function() {
@@ -266,20 +267,12 @@
     });
     </script>
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-88711262-1', 'auto');
-    ga('send', 'pageview');
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').catch(function(ex) {
+            console.warn(ex);
+            console.warn('(This warning can be safely ignored outside of the production build.)');
+        });
+    }
     </script>
 </body>
 
