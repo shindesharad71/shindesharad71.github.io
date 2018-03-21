@@ -2,278 +2,1027 @@
 <html lang="en">
 
 <head>
-    <!-- Oh hai! If you're wondering what the site is built in it's probably going to be a bit hard since everything is minified, but I'm happy to let you know.-->
-    <!-- This is a statically generated using bootstrap and some other javascript plugins-->
-    <!-- Other than that, I try to keep it dead simple. The fewer moving parts, the better.-->
-    <!-- Curious about anything? Feel free to shoot me a note at shindesharad71@gmail.com -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="manifest" href="/imgs/manifest.json">
-    <title>Sharad Shinde | Web Developer</title>
-    <meta name="description" content="Portfolio of Web Developer & Designer - Sharad Shinde.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sharad Shinde | Full Stack Developer</title>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sharad Shinde | Full Stack Developer">
+    <meta property="og:description" content="Portfolio of Full Stack Developer - Sharad Shinde.">
+    <meta property="og:url" content="sharadshinde.in">
+    <meta property="og:site_name" content="Sharad Shinde | Full Stack Developer">
+    <meta property="article:publisher" content="sharadshinde.in">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@shindesharad71">
+    <meta name="twitter:title" content="Sharad Shinde | Full Stack Developer">
+    <meta name="twitter:description" content="Portfolio of Full Stack Developer - Sharad Shinde.">
+    <meta name="twitter:url" content="sharadshinde.in">
     <meta name="author" content="Sharad Shinde">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/imgsapple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="imgs/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
-    <link rel="manifest" href="imgs/manifest.json">
+    <meta name="description" content="Portfolio of Full Stack Developer - Sharad Shinde.">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="imgs/ms-icon-144x144.png">
-    <meta name="theme-color" content="#2098D1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification" content="xdqQAL6KCVHCJcgHYDB6DDCnhx3QI6IMeen9BrKTveg" />
+    <meta name="google-site-verification" content="95psw0DXvxCto91NvXCF9AjiNHvWelhIMJ6tdah-FXE" />
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+    <meta name="robots" content="index, follow">
 </head>
 
 <body>
-    <nav class="navbar"><a class="nav-link" href="http://sharadshinde.in"><h1 class="navbar-brand mb-0 hvr-bounce-in"><img src="logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo"> Sharad Shinde</h1></a>
-        <ul class="nav navbar-nav hidden-sm-down float-md-right">
-            <li class="nav-item"><a class="nav-link hvr-buzz" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link hvr-buzz" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link hvr-buzz" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link hvr-buzz" href="#about">Contact</a></li>
+    <!-- Navigation Menu-->
+    <nav ng-class="hide-on-small-only">
+        <ul class="side-nav fixed section table-of-contents">
+            <li class="logo">
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+                    <h1>Sharad Shinde
+                        <span class="brown-text light">Full Stack Developer</span>
+                    </h1>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+                    <i class="mdi-social-person small"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text">
+                    <i class="mdi-action-trending-up small"></i>
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+                    <i class="mdi-av-web small"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+                    <i class="mdi-av-equalizer small"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Certificates section" href="#certificates" class="waves-effect waves-dark red-text">
+                    <i class="mdi-action-grade small"></i>
+                    <span>Certificates</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+                    <i class="mdi-social-school small"></i>
+                    <span>Education</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+                    <i class="mdi-content-mail small"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Sharad's resume in a new tab" href="https://drive.google.com/open?id=1MT3-9QV-tnzW6ILmRZIZQ6fPIXtkX2b8"
+                    target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                    <i class="mdi-action-description small"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
         </ul>
     </nav>
-    <div id="particles-js"></div>
-    <section id="home">
-        <div class="container text-md-center text-xs-center" id="main">
-            <h1 class="display-1 hidden-sm-down">Hello, I am Sharad</h1>
-            <h1 class="hidden-md-up">Hello, I am Sharad</h1>
-            <br>
-            <h2 class="display-4 hidden-sm-down">Web Developer</h2>
-            <h2 class="lead hidden-md-up">Web Developer</h2>
-            <h4><i>HTML &middot; CSS &middot; JS &middot; Bootstrap &middot; PHP &middot; MySQL</i></h4>
-            <br> <a style="color: #fff;" href="#skills" class="arrow">View Portfolio</a>
-            <div class="arrow">
-                <a class="fa fa-angle-down fa-3x" href="#skills"></a>
-            </div>
+    <nav class="hide-on-large only trigger z-depth-1">
+        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse">
+            <i class="mdi-navigation-menu"></i>
+        </a>
+        <div class="name-title">
+            <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Sharad Shinde</a>
+            <span class="brown-text light">Full Stack Developer</span>
         </div>
-    </section>
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div id="sb-container" class="sb-container">
-                        <div>
-                            <i class="fa fa-html5 fa-3x"></i>
-                            <h4><span>HTML5</span></h4>
+    </nav>
+    <nav class="hide-on-large only">
+        <ul id="slide-out" class="side-nav">
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+                    <i class="mdi-social-person small"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text">
+                    <i class="mdi-action-trending-up small"></i>
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+                    <i class="mdi-av-web small"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+                    <i class="mdi-av-equalizer small"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Certificates section" href="#certificates" class="waves-effect waves-dark red-text">
+                    <i class="mdi-action-grade small"></i>
+                    <span>Certificates</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+                    <i class="mdi-social-school small"></i>
+                    <span>Education</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+                    <i class="mdi-content-mail small"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Andrew's Resume in a new tab" href="https://drive.google.com/open?id=1MT3-9QV-tnzW6ILmRZIZQ6fPIXtkX2b8"
+                    target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                    <i class="mdi-action-description small"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Content-->
+    <main>
+        <section id="intro" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2>I want to
+                    <span class="teal">make things</span>
+                    <br>that
+                    <span class="underline">make a difference</span>.</h2>
+            </div>
+        </section>
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title white-text teal">About</h3>
+            <div class="container flow-text">
+                <blockquote>
+                    <h2>Mission-driven full stack developer with a passion for thoughtful UI design, collaboration, and teaching.</h2>
+                </blockquote>
+                <p>I began Programming three years ago with design and prototyping projects. Later on, I began working on web
+                    and software development projects and highly scalable Web Applications with custom made functionalities
+                    as per the requirements.</p>
+                <p>As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things,
+                    and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big
+                    impact at a high growth company.</p>
+                <p>
+                    <strong>Current Focus</strong>:&nbsp;
+                    <a aria-label="Navigate to the Machine Learning">Machine Learning</a>&nbsp;//&nbsp;
+                    <a aria-label="Navigate to the Flutter">Flutter</a>
+                </p>
+            </div>
+        </section>
+        <section id="experience" class="section scrollspy">
+            <h3 class="page-title white-text teal">Experience</h3>
+            <div class="container">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="http://webmatrixtech.com" target="_blank">
+                                    <img alt="Webmatrix logo" src="static/img/webmatrix-logo.png" class="responsive-img center-block">
+                                </a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="http://webmatrixtech.com" target="_blank" class="teal-text hoverline">Webmatrix Technologies</a>
+                                    </span>
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <span class="fa fa-css3 fa-3x"></span>
-                            <h4><span>CSS3</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-code fa-3x"></span>
-                            <h4><span>JavaScript</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-bold fa-3x"></span>
-                            <h4><span>Bootstrap</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-superpowers fa-3x"></span>
-                            <h4><span>Materialize</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-code fa-3x"></span>
-                            <h4><span>PHP</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-database fa-3x"></span>
-                            <h4><span>MySQL</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-wordpress fa-3x"></span>
-                            <h4><span>WordPress</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-desktop fa-3x"></span>
-                            <h4><span>UI/UX Design</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-linux fa-3x"></span>
-                            <h4><span>LINUX</span></h4>
-                        </div>
-                        <div>
-                            <span class="fa fa-desktop fa-3x"></span>
-                            <h4><span>Apache</span></h4>
-                        </div>
-                        <div>
-                            <h4><span>Skills</span></h4>
-                            <span class="sb-toggle">Click to open/close</span>
-                            <h5><span>My Skills</span></h5>
-                        </div>
+                        <div class="role brown-text">Full-Stack Software Developer</div>
+                        <p>
+                            <em class="grey-text">Webmatrix Technologies was founded in 2009 and has 9 years experience in assisting organizations
+                                and companies throughout the world with their IT software, the web, and mobile app requirements.We
+                                specialize in helping our clients to connect with their customers, sell their ideas, products,
+                                and services. We use a flexible and consultative approach to achieve the best possible level
+                                of client satisfaction and crucial deliver results.
+                            </em>
+                        </p>
+                        <h6>Develop Product</h6>
+                        <ul>
+                            <li>Build interactive web application with latest stack.</li>
+                            <li>Testing responsiveness and add custom designing.</li>
+                            <li>Oversee transition from page-based styles to modular component styles</li>
+                            <li>Guide best practices around accessible, semantic UI/UX</li>
+                            <li>Tools: PHP, Slim3, MySQL // Angular, JS, jQuery // Sass // HTML</li>
+                        </ul>
+                        <h6>Accomplishments</h6>
+                        <ul>
+                            <li>Dramatically increased speed of UI development using atomic, scalable CSS</li>
+                            <li>Built scalable API for the Angular applications.</li>
+                            <li>Implemented application frontend with Angular and material design.</li>
+                            <li>WordPress customization according to client needs.</li>
+                        </ul>
                     </div>
-                    <!-- sb-container -->
+                    <div class="card-action">
+                        <span>Nov 2017 - Present | Pune, Maharastra, India</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h2 class="text-md-center text-xs-center" style="padding-top: 140px;"><i class="fa fa-bars"></i> Skills</h2>
-                    <br>
-                    <p>
-                        I began Programming two years ago with design and prototyping projects. Later on, I began working on web and software development projects and highly scalable Web Applications with custom made functionalities as per the requirements.
-                        <br>
-                        <br>I have worked for OffStep, a India based education start-up, as a Front End Web Developer & UX Designer. I worked with a number of technologies such as JavaScript, HTML5/CSS3, jQuery, among others.
-                        <br>
-                        <br>I am working in backend development with PHP and MySQL. I love to code in core PHP and also worked on PHP Frameworks.
-                    </p>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="">
+                                    <img alt="TutorsHere logo" src="static/img/tutorshere-logo.png" class="responsive-img center-block">
+                                </a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="" class="teal-text hoverline">TutorsHere</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role brown-text">Web Developer Intern</div>
+                        <p>
+                            <em class="grey-text">A Startup which provides you private tutors at your doorstep.
+                            </em>
+                        </p>
+                        <ul>
+                            <li>I was chief web developer at TutorsHere.com, Built the whole website from scratch.</li>
+                            <li>Made responsive and custom theming with Bootstrap.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>Oct 2016 - Feb 2017 | Pune, Maharastra, India</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="portfolio">
-        <div class="hr">
-            <h3 class="text-md-center text-xs-center"><i class="fa fa-briefcase"></i> Portfolio</h3>
-        </div>
-        <div class="container" style="padding-top: 40px;">
+        </section>
+        <section id="projects" class="section scrollspy">
+            <h3 class="page-title white-text teal">Open Source Projects</h3>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://tutorshere.com" target="_blank" rel="noopener">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/th.png" alt="TutorsHere logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">TutorsHere</h4>
-                                    <h6 class="card-subtitle text-muted">Web Development and Design</h6>
+                    <!-- GitHub Contribution -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="GitHub Contribution" src="static/img/projects-repo.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">GitHub Cotribution
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A GitHub repository created for showing all my projects on one place.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>
+                                        Written in
+                                        <strong> Markdown</strong> on GitHub</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Code of Project Repository" href="https://github.com/shindesharad71/Projects" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for Project Contribution" href="https://github.com/shindesharad71/Projects" target="_blank"
+                                        data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://club-zero.in" rel="noopener" target="_blank">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/cz.png" alt="Club ZERO logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Club ZERO</h4>
-                                    <h6 class="card-subtitle text-muted">Web Design</h6>
+                    <!-- WordPress with Vue -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="WordPress Vue logo" src="static/img/wordpress-vue.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">WordPress with VueJS
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Frontend For WordPress Made with Vue JS & WordPress REST API.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Integrated “Vue” with
+                                        <strong>WordPress API</strong>
+                                    </li>
+                                    <li>Developed
+                                        <strong>CSS and JS</strong> responsive menu</li>
+                                    <li>Created posts list via
+                                        <strong>WordPress API</strong>
+                                    </li>
+                                    <li>Responsive made with Bootstrap css</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Code" href="https://github.com/shindesharad71/WordPress-Fronted-With-Vue" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for project" href="https://github.com/shindesharad71/WordPress-Fronted-With-Vue" target="_blank"
+                                        data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://showcase.sharadshinde.in/Club-Manager/" rel="noopener" target="_blank">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/cm.png" alt="Club Manager logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Club Manager</h4>
-                                    <h6 class="card-subtitle text-muted">Web Developement</h6>
+                    <!-- Stock Trader -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Stock Trader with Vue" src="static/img/stock-trader.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Stock Trader With Vue
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>Stock Trader Web App Using Vue JS 2.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Built with
+                                        <strong>VueJS & Firebase</strong>
+                                    </li>
+                                    <li>Integrated
+                                        <strong>Firebase API</strong>
+                                    </li>
+                                    <li>Designed in
+                                        <strong>Bootstrap</strong>
+                                    </li>
+                                    <li>
+                                        <strong>Javascript</strong> input validation</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit web app" href="https://shindesharad71.github.io/Stock-Trader-With-Vue/#/" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo" href="https://github.com/shindesharad71/Stock-Trader-With-Vue" target="_blank" data-position="top"
+                                        data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://showcase.sharadshinde.in/DigiWord/" rel="noopener" target="_blank">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/dw.png" alt="DigiWord logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">DigiWord</h4>
-                                    <h6 class="card-subtitle text-muted">Web Developement</h6>
+                    <!-- YouTube With ReactJS -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="YouTube with ReactJS" src="static/img/youtube-react.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">YouTube with ReactJS
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>My First ReactJS App! Youtube Frontend With ReactJS and Youtube APIs.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Front-end development in
+                                        <strong>ReactJS</strong>
+                                    </li>
+                                    <li>
+                                        <strong>YouTube API</strong> integration with ReactJS
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit YouTube ReactJS web app" href="https://shindesharad71.github.io/Youtube-With-ReactJS/" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo" href="https://github.com/shindesharad71/Youtube-With-ReactJS" data-position="top" data-tooltip="Source GitHub"
+                                        class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://showcase.sharadshinde.in/Account-Management/" rel="noopener" target="_blank">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/am.png" alt="Account Management logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Account Management</h4>
-                                    <h6 class="card-subtitle text-muted">Web Developement</h6>
+                    <!-- Weather App With React -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Weather With React logo" src="static/img/weather-react.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Weather With ReactJS
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Simple Weather Finder Web Application Made Using React and Redux.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Made with
+                                        <strong>ReactJS</strong> &amp;
+                                        <strong>Redux State Management</strong>
+                                    </li>
+                                    <li>
+                                        <strong>Openweather API</strong>
+                                    </li>
+                                    <li>Native Javascript
+                                        <strong>geolocation</strong>
+                                    </li>
+                                    <li>
+                                        <strong>Charts</strong> integration with ReactJS</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Weather web app" href="https://shindesharad71.github.io/Weather-React-Redux-WebApp/" target="_blank"
+                                        data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for React Weather project" href="https://github.com/shindesharad71/Weather-React-Redux-WebApp"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 hvr-shrink">
-                        <a href="http://showcase.sharadshinde.in/Chatting-UI/" rel="noopener" target="_blank">
-                            <div class="card">
-                                <div class="text-md-center text-xs-center"><img class="card-img-top img-fluid" src="imgs/cui.png" alt="Chatting UI logo"></div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Chatting UI</h4>
-                                    <h6 class="card-subtitle text-muted">Web Design</h6>
+                    <!-- Recipe Book Angular-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Angular Recipe App" src="static/img/angular-recipe.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">RecipeBook Angular
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>An Angular 4 Project To Understand Angular Concepts and Features.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Build with
+                                        <strong>Angular</strong> &amp;
+                                        <strong>Bootstrap</strong>
+                                    </li>
+                                    <li>Image upload with
+                                        <strong>Firebase Storage</strong>
+                                    </li>
+                                    <li>User Authentication with
+                                        <strong>Firebase</strong>
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Angular Recipe web app" href="https://github.com/shindesharad71/Angular-Recipe-Book" target="_blank"
+                                        data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for Angular Recipe" href="https://github.com/shindesharad71/Angular-Recipe-Book" target="_blank"
+                                        data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <div class="row" style="padding-bottom: 40px;">
-                    <div class="text-md-center text-xs-center"><a id="view-portfolio" class="btn btn-lg btn-outline-primary">View full portfolio</a></div>
+                    <!-- Chat With NodeJS-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Chat With NodeJS" src="static/img/chat-node.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Chat App With NodeJS
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Simple Chat Web Application Made With Socket IO.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Made using
+                                        <strong>NodeJS</strong> backend.</li>
+                                    <li>
+                                        <strong>Socket IO</strong> for real time messaging
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Node Chat App" href="https://sharz-socket-chat.herokuapp.com/" target="_blank" data-position="top" data-tooltip="View Online"
+                                        class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for Chat Node project" href="https://github.com/shindesharad71/Chat-WebApplication"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ionic Shopping List-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Ionic App" src="static/img/ionic.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Ionic Shopping List
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Shopping List Hybrid Mobile Application For Understanding Concepts of Ionic 3 and Firebase.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Fully Hybrid App Support
+                                        <strong>Android and iOS</strong> platforms.</li>
+                                    <li>Integrates
+                                        <strong>Firebase API</strong> for storing data.
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit the GitHub repo for Ionic Shoppig List project" href="https://github.com/shindesharad71/Ionic-Firebase-Shopping-List"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RESTful APIs with Slim3-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Slim3 Api" src="static/img/slim-logo.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">RESTful Slim API
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>REST API Build Using Slim 3 PHP Framework.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>REST APIs made with
+                                        <strong>Slim3</strong> framework.</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Slim API" href="https://github.com/shindesharad71/RESTful-Slim-API" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Club Manager -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Club Manager" src="static/img/club-manager.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Club Manager
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Social Club/Group Organizer with Blogging Platform Made Using PHP.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Custom
+                                        <strong>Bootstrap Theme</strong>
+                                    </li>
+                                    <li>Dashboard</li>
+                                    <li>Blogging Palform</li>
+                                    <li>Notice & Member Management</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Club Manager website" href="https://github.com/shindesharad71/Club-Manager" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for the Club Manager project" href="https://github.com/shindesharad71/Club-Manager"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DigiWord -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="DigiWord">
+                                <img alt="Cidewalk logo" src="static/img/php-logo.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">DigiWord
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>A Single Author Blogging Platform Created with PHP & Bootstrap.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>Built with
+                                        <strong>PHP</strong> and
+                                        <strong>Bootstrap</strong>
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit DigiWord web app" href="https://github.com/shindesharad71/DigiWord" target="_blank" data-position="top"
+                                        data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progressive Web App -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="PWA App logo" src="static/img/pwa.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">PWA Portfolio
+                                    <i class="mdi-navigation-more-vert right"></i>
+                                </span>
+                                <p>My Portfolio v2.0 created with new version of Bootstrap 4 and support of Progressive Web
+                                    App (PWA).</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                    <i class="mdi-navigation-close right"></i>
+                                </span>
+                                <ul>
+                                    <li>
+                                        <strong>Customized Bootstrap V4</strong> theme</li>
+                                    <li>Fully
+                                        <strong>responsive</strong> designs</li>
+                                    <li>Progressive Web App Support</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Portfolio website" href="https://shindesharad71.github.io/" target="_blank" data-position="top" data-tooltip="View Online"
+                                        class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for the PWA portfolio project" href="https://github.com/shindesharad71/PWA-Portfolio"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </section>
-    <section id="about">
-        <div class="hr">
-            <h3 class="text-md-center text-xs-center"><i class="fa fa-info-circle"></i> About Me</h3></div>
-        <div class="container about-container">
-            <div class="row">
-                <div class="col-md-2">
-                    <br>
-                    <img class="img-fluid rounded" height="110px" width="110px" src="imgs/sharad-shinde.jpg" alt="Sharad Shinde">
+            <center>
+                <a data-tooltip="View All Projects on GitHub" href="https://github.com/shindesharad71/Projects" target="_blank" class="btn-large waves-effect waves-light brown tooltipped">
+                    <i class="fa fa-external-link"></i>&nbsp;&nbsp;View All Projects
+                </a>
+            </center>
+        </section>
+        <section id="skills" class="section scrollspy">
+            <h3 class="page-title white-text teal">Skills</h3>
+            <div class="container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">HTML</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="HTML5" src="static/img/html5.png" class="responsive-img">HTML5</div>
+                            <div class="col s4 m2">
+                                <img alt="JSX" src="static/img/react.png" class="responsive-img">JSX</div>
+                            <div class="col s4 m2">
+                                <img alt="HAML" src="static/img/haml.png" class="responsive-img">Haml</div>
+                            <div class="col s4 m2">
+                                <img alt="Jade" src="static/img/jade.png" class="responsive-img">Jade</div>
+                            <div class="col s4 m2">
+                                <img alt="Jekyll" src="static/img/jekyll.png" class="responsive-img">Jekyll</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <h3>About Me</h3>
-                    <br>
-                    <p>Hi, I am Sharad Shinde. I'm a <b>Web Developer and Web Designer</b> from Pune, India.
-                        <br>I am currently an undergraduate, pursuing degree in Computer Engineering.
-                        <br>I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me.
-                    </p>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">CSS</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="CSS3" src="static/img/css3.png" class="responsive-img">CSS3</div>
+                            <div class="col s4 m2">
+                                <img alt="SASS" src="static/img/sass.png" class="responsive-img">SASS</div>
+                            <div class="col s4 m2">
+                                <img alt="Bootstrap" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
+                            <div class="col s4 m2">
+                                <img alt="Foundation" src="static/img/foundation.png" class="responsive-img">Foundation</div>
+                            <div class="col s4 m2">
+                                <img alt="Materialize" src="static/img/materialize.png" class="responsive-img">Materialize</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <h3>Contact</h3>
-                    <br>
-                    <p>Like my work? want to hire me? any suggestions, ideas for me? well then you can contact me!
-                        <br>I'm available for freelance contracts, so get in touch</p>
-                    <i class="fa fa-envelope"></i> Email: shindesharad71@gmail.com
-                    <br>
-                    <br>
-                    <ul>
-                        <a class="icons" rel="noopener" target="_blank" href="https://github.com/shindesharad71"><i class="fa fa-github fa-2x"></i></a>
-                        <a class="icons" rel="noopener" target="_blank" href="https://in.linkedin.com/in/shindesharad71"><i class="fa fa-linkedin fa-2x"></i></a>
-                        <a class="icons" rel="noopener" target="_blank" href="https://www.quora.com/profile/Sharad-Shinde-2"><i class="fa fa-quora fa-2x"></i></a>
-                        <a class="icons" rel="noopener" target="_blank" href="https://plus.google.com/+SharadShinde71"><i class="fa fa-google-plus fa-2x"></i></a>
-                    </ul>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Javascript</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="Vue" src="static/img/vuejs-logo.png" class="responsive-img">Vue</div>
+                            <div class="col s4 m2">
+                                <img alt="NodeJS" src="static/img/nodejs.png" class="responsive-img">Node</div>
+                            <div class="col s4 m2">
+                                <img alt="JS" src="static/img/javascript.png" class="responsive-img">Javascript</div>
+                            <div class="col s4 m2">
+                                <img alt="Angular" src="static/img/angular.png" class="responsive-img">Angular</div>
+                            <div class="col s4 m2">
+                                <img alt="ReactJS" src="static/img/react.png" class="responsive-img">React</div>
+                        </div>
+                    </div>
                 </div>
-                <br>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Back-End</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="PHP" src="static/img/php-logo.png" class="responsive-img">PHP</div>
+                            <div class="col s4 m2">
+                                <img alt="MySQL" src="static/img/mysql-logo.png" class="responsive-img">MySQL</div>
+                            <div class="col s4 m2">
+                                <img alt="Laravel" src="static/img/laravel-logo.png" class="responsive-img">Laravel</div>
+                            <div class="col s4 m2">
+                                <img alt="Slim3" src="static/img/slim-logo.png" class="responsive-img">Slim3</div>
+                            <div class="col s4 m2">
+                                <img alt="MongoDB" src="static/img/mongodb.png" class="responsive-img">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Build Tools</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="npm" src="static/img/npm-logo.png" class="responsive-img">npm</div>
+                            <div class="col s4 m2">
+                                <img alt="Webpack" src="static/img/webpack.png" class="responsive-img">Webpack</div>
+                            <div class="col s4 m2">
+                                <img alt="Gulp" src="static/img/gulp.png" class="responsive-img">Gulp</div>
+                            <div class="col s4 m2">
+                                <img alt="Grunt" src="static/img/grunt.png" class="responsive-img">Grunt</div>
+                            <div class="col s4 m2">
+                                <img alt="Bower" src="static/img/bower.png" class="responsive-img">Bower</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">CMS</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="WordPress" src="static/img/wordpress.png" class="responsive-img">Wordpress</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Other</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="GitHub" src="static/img/github.png" class="responsive-img">Github</div>
+                            <div class="col s4 m2">
+                                <img alt="Heroku" src="static/img/heroku.png" class="responsive-img">Heroku</div>
+                            <div class="col s4 m2">
+                                <img alt="Docker" src="static/img/docker-logo.png" class="responsive-img">Docker</div>
+                            <div class="col s4 m2">
+                                <img alt="PWA" src="static/img/pwa-logo.png" class="responsive-img">PWA</div>
+                            <div class="col s4 m2">
+                                <img alt="Firebase" src="static/img/firebase.png" class="responsive-img">Firebase</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer id="footer" class="text-md-center text-xs-center"><small>&copy; Sharad Shinde 2015-17</small></footer>
-    <!-- All CSS resources -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Herr+Von+Muellerhoff|Roboto|Roboto+Condensed" rel="stylesheet">
-    <!-- All JS resources -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script>
-    <script type="text/javascript">
-    $(function() {
-
-        $('#sb-container').swatchbook({
-            angleInc: 15,
-            neighbor: 15,
-            initclosed: true,
-            closeIdx: 11
-        });
-
-    });
-    </script>
+        </section>
+        <section id="certificates" class="section scrollspy">
+            <h3 class="page-title white-text teal">Certificates</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://www.udemy.com/certificate/UC-TZW5EE5R/" target="_blank" class="teal-text hoverline">Udemy - Angular</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">License UC-TZW5EE5R | Sept 2017</p>
+                                <ul>
+                                    <li>Learned about Angular frontend framework. Learned how to build scalling application with
+                                        Angular.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://wespire.com" target="_blank" class="teal-text hoverline">Udemy - React</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">License UC-XUVZSD0Q | Aug 2017</p>
+                                <ul>
+                                    <li>Learned about React frontend framework. Learned how to build scalling application with
+                                        React.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://www.udemy.com/certificate/UC-KUBHT44Q/" target="_blank" class="teal-text hoverline">Udemy - Vue</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">License UC-KUBHT44Q | Aug 2017</p>
+                                <ul>
+                                    <li>Learned about VueJS frontend framework. Learned how to build scalling application with
+                                        VueJS.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://www.udemy.com/certificate/UC-9E6KI85G/" class="teal-text hoverline">GIT & GitHub</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">License UC-9E6KI85G | Aug 2017</p>
+                                <ul>
+                                    <li>Learned about software version control system and how to use git & github.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="https://www.udemy.com/certificate/UC-PKBWQFH0/" target="_blank" class="teal-text hoverline">SEO Basics</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">License UC-PKBWQFH0 | Aug 2017</p>
+                                <ul>
+                                    <li>Learned about the basics of SEO and how to improve the seo rank of website.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="section scrollspy">
+            <h3 class="page-title white-text teal">Education</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="http://www.unipune.ac.in/" target="_blank" class="teal-text hoverline">University of Pune</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">Pune, Maharastra, India | 2015 - Persuing</p>
+                                <ul>
+                                    <li>B.E. in Computer Engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title">
+                                        <a href="http://msbte.org.in/" target="_blank" class="teal-text hoverline">MSBTE</a>
+                                    </span>
+                                </p>
+                                <p class="brown-text">Pune, Maharastra, India | 2012 - 2015</p>
+                                <ul>
+                                    <li>Diploma in Computer Engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title white-text teal">Contact</h3>
+            <div class="container">
+                <p>
+                    <a aria-label="Email Sharad" href="mailto:shindesharad71@gmail.com" data-position="top" data-tooltip="Email Sharad" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-envelope"></i>
+                        <a alt="" href="mailto:shindesharad71@gmail.com" class="hoverline">shindesharad71@gmail.com</a>
+                    </a>
+                </p>
+                <p>
+                    <a aria-label="View Sharad on GitHub" href="http://github.com/shindesharad71" target="_blank" data-position="top" data-tooltip="View Sharad on GitHub"
+                        class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-github"></i>
+                        <a alt="" href="http://github.com/shindesharad71" target="_blank" class="hoverline">github.com/shindesharad71</a>
+                    </a>
+                </p>
+                <p>
+                    <a aria-label="View Sharad on LinkedIn" href="http://linkedin.com/in/shindesharad71" target="_blank" data-position="top"
+                        data-tooltip="View Sharad on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-linkedin"></i>
+                        <a alt="" href="http://linkedin.com/in/shindesharad71" target="_blank" class="hoverline">linkedin.com/in/shindesharad71</a>
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     <script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js').catch(function(ex) {
-            console.warn(ex);
-            console.warn('(This warning can be safely ignored outside of the production build.)');
+        // Materialize - Initializers
+        $(document).ready(function () {
+            $('.scrollspy').scrollSpy();
+            // Initialize collapse button
+            $(".button-collapse").sideNav({
+                menuWidth: 190, // Default is 240
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            });
         });
-    }
     </script>
+    <script src="sw.js"></script>
+    <!-- nothing to see here...-->
 </body>
 
 </html>
