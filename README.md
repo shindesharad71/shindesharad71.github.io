@@ -4,6 +4,7 @@ My Portfolio Version 3 Made With Material Design and PWA Support.
 
 * Build With Material Design
 * Responsive
+* Lazy Loading Images
 * Oflline Loading - PWA Support
 
 ### Light House Report
